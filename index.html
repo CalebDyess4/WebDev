@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> Hello </title>
-   <p>This page was last updated on:
-      <script>
-       <!-- Hiding Script Starts Here       
-       document.write(document.lastModified);
-        //stop Hiding Script Here -->
-      </script>
-    </p>
+    <title> Hello </title> 
       
     </head>
     <body>
     <p>HELLO WORLD!</p>
-    </body>
+
+    <p>This page was last updated on:
+        <script>
+         !-- //Hiding Script Starts Here       
+         document.write(document.lastModified);
+          //stop Hiding Script Here -->
+        </script>
+      </p>
+   
   <article> 
 <section> 
   <header> <h1> Testing a button </h1> </header>
@@ -41,15 +42,12 @@
      hours = currentDt.getHours(); //get the hours from current time
      minutes = currentDt.getMinutes(); //get the minutes from current time
      seconds = currentDt.getSeconds(); //get the seconds from the current time
+     document.write("<p><strong>" + hours + ":" + minutes + ":" + seconds + "</strong></p>");
+          
     </script>
-    
-    
-    
-    
-    
-    
+  
     </section>
-  </article>
-
+</article>
+</body>
 </html>
 
