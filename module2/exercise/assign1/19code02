@@ -1,0 +1,27 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Example 5.3 </title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="count.js"></script> <style>
+        button {
+            background-color: #0066aa;
+            color: #ffffff;
+            font-weight: bold;
+            border: 2px solid, #C0C0C0;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="countIt()">click me</button>
+    <div id="counter"></div>
+</body>
+
+</html>
