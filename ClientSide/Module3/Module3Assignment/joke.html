@@ -8,6 +8,7 @@
     <title> Joke Generator</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <script src="joke.js"></script>
     
     <style media="screen">
       *{
@@ -79,23 +80,6 @@ button{
         <button id="btn">Generate Joke</button>
     </div>
 
-    <!-- Script -->
-  <script type="text/javascript">
-const jokeContainer = document.getElementById("joke");
-const btn = document.getElementById("btn");
-const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
-
-let getJoke = () => {
-    jokeContainer.classList.remove("fade");
-    fetch(url)
-    .then(data => data.json())
-    .then(item =>{
-        jokeContainer.textContent = `${item.joke}`;
-        jokeContainer.classList.add("fade");
-    });
-}
-btn.addEventListener("click",getJoke);
-getJoke();
-  </script>
+  
 </body>
 </html>
