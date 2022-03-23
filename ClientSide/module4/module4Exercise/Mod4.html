@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+   </head>
+   <!-- On HTML body onload function call javascript function which will take 10 names from user -->
+   <body onload="nameSortingDisplay()">
+      <!-- User entered name will be displaye in below paragraph -->
+      <p id="namesBeforeSort"></p>
+      <!-- Sorted names will be displayed in the belw paragraph -->
+      <p id="namesAfterSort"></p>
+
+    <script>
+function nameSortingDisplay() {
+        // Array to hold entered names
+        var namesArray = [];
+        //Promt 10 times to take name from user
+        for (i = 0; i < 10; i++) {
+                var name = prompt("Please enter name");
+                //Add entered name to the array
+                namesArray.push(name);
+        }
+        //Display the entered name before sorting
+        document.getElementById("namesBeforeSort").innerHTML = "Names before soring : " + namesArray;
+        //Sort the entered names
+        namesArray.sort();
+        //Display the entered name after sorting
+        document.getElementById("namesAfterSort").innerHTML = "Names after soring : " + namesArray;
+}
+
+
+
+
+
+    </script>
+   </body>
+</html>
