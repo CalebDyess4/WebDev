@@ -18,7 +18,7 @@
 
 
 			<input type="text" id="amount"
-				placeholder="Amount to be paid"> ₹
+				placeholder="Meal Price"> &#36;
 
 			
 
@@ -31,11 +31,13 @@
 				<option selected disabled hidden>
 					Select
 				</option>
-				<option value="0.25">25% - Top Notch</option>
-				<option value="0.20">20% - Excellent</option>
-				<option value="0.15">15% - Good</option>
-				<option value="0.10">10% - Bad</option>
+                <option value="0.25">50% - Superb</option>
+				<option value="0.25">30% - Amazing</option>
+				<option value="0.20">25% - Excellent</option>
+				<option value="0.15">20% - Good</option>
+				<option value="0.10">15% - Bad</option>
 				<option value="0.05">5% - Worst</option>
+                <option value="0.05">0% - Abysmal</option>
 			</select>
 
 			
@@ -46,7 +48,7 @@
 
 
 			<input type="text" id="persons"
-				placeholder="Number of people sharing the bill">
+				placeholder="Split how many ways">
 			<button id="calculate">Calculate</button>
 		</div>
 
@@ -58,10 +60,11 @@
 
 
 
-			<span id="total">0</span>₹
+			<span id="total">0</span>&#36;
 			<span id="each">each</span>
 		</div>
 	</div>
 </body>
 
 </html>
+
